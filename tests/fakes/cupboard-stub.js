@@ -4,12 +4,13 @@
 
 class CupboardStub {
 
-    constructor() {
+    constructor(key = true) {
         this._empty = false;
+        this._open = key;
     }
 
     isOpen() {
-        return true;
+        return this._open;
     };
 
     hasDrink(drinkName, volume) {

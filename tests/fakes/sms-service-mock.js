@@ -6,6 +6,7 @@ class SmsServiceMock {
     }
 
     send(message) {
+        console.log("SmsServiceMock.send: " + message);
         this._lastSentMessage = message;
     }
 
