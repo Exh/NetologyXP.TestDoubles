@@ -1,10 +1,11 @@
 "use strickt"
 
-class CalendarStub
+class Calendar
 {
     constructor()
     {
         this._today = "Monday";
+        this._date = "1.01.2000";
     }
 
     set today(value)
@@ -16,6 +17,16 @@ class CalendarStub
     {
         return this._today;
     }
-};
 
-module.exports = CalendarStub;
+    set currentDate(date)
+    {
+        this._date = date;
+    }
+
+    get currentDate()
+    {
+        return this._date;
+    }
+}
+
+module.exports = Calendar;
